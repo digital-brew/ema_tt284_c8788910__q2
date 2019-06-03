@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>OU Walking Club | Admin Area</title>
+
+    <link rel="stylesheet" href="q2a.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="row admin-area">
+        <div class="col-side">
+            <div class="panel-name">
+                <h3>OU Walking Club <span>admin area</span></h3>
+            </div>
+            <div class="navigation">
+                <ul class="menu">
+                    <li class="menu-item">
+                        <a href="dashboard.html" class="menu-link">Dashboard</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="walk_event.html" class="menu-link">Walk Events</a>
+                        <ul class="submenu">
+                            <li class="submenu-item active">
+                                <a href="walk_event__new.html" class="submenu-link">Add New</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="other_event.html" class="menu-link">Other Events</a>
+                        <ul class="submenu">
+                            <li class="submenu-item">
+                                <a href="walk_event__new.html" class="submenu-link">Add New</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="news.html" class="menu-link">News</a>
+                        <ul class="submenu">
+                            <li class="submenu-item">
+                                <a href="walk_event__new.html" class="submenu-link">Add New</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="announcements.html" class="menu-link">Announcements</a>
+                        <ul class="submenu">
+                            <li class="submenu-item">
+                                <a href="walk_event__new.html" class="submenu-link">Add New</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-main">
+            <h3 class="main-title">Add New Walk Event</h3>
+
+            <form action="">
+                <div class="form-control">
+                    <label for="walkName">Name</label>
+                    <input type="text" id="walkName" name="walkName" placeholder="e.g. Watcombe to Sheldon">
+                </div>
+                <div class="form-control half-width">
+                    <label for="walkDate">Date</label>
+                    <input type="text" id="walkDate" name="walkDate" placeholder="e.g. 23 Feb 2019">
+                </div>
+                <div class="form-control half-width">
+                    <label for="walkStartTime">Start time</label>
+                    <input type="text" id="walkStartTime" name="walkStartTime" placeholder="e.g. 10.30am">
+                </div>
+                <div class="form-control">
+                    <label for="walkMeetingPoint">Meeting point</label>
+                    <input type="text" id="walkMeetingPoint" name="walkMeetingPoint" placeholder="e.g. Watcombe Car Park">
+                </div>
+                <div class="form-control">
+                    <label for="walkDistance">Distance in miles</label>
+                    <input type="number" id="walkDistance" name="walkDistance" placeholder="e.g. 9">
+                </div>
+                <div class="form-control">
+                    <label for="walkNotes">Notes</label>
+                    <textarea id="walkNotes" name="walkNotes" rows="5" placeholder="e.g. Grade A walk with steep hills"></textarea>
+                </div>
+                <div class="form-control">
+                    <label for="walkStatus">Status</label>
+                    <div class="select">
+                        <select name="walkStatus" id="walkStatus">
+                            <option value="Proposed">Proposed</option>
+                            <option value="Approved">Approved</option>
+                            <option value="Rejected">Rejected</option>
+                        </select>
+                    </div>
+                </div>
+
+                <input type="hidden" name="sessionID" value="12345678-09ab-1111-cdef">
+
+                <div class="form-control">
+                    <input type="submit" value="Submit" class="submit">
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
